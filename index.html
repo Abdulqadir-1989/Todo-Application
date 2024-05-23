@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(https://img.freepik.com/premium-vector/abstract-blue-background_446392-265.jpg?w=740);
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #todomain {
+            background-image: url(https://img.freepik.com/free-vector/cerulean-blue-curve-frame-template_53876-99029.jpg?w=740&t=st=1716457252~exp=1716457852~hmac=1c9778d5d201904d757ceea1c315bcfba372b93b392a2e44e23f07cfd507c4dd);
+            width: 50%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            border-radius: 20px 0 15px 0;
+        }
+
+        #todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .todo-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .todo-item label {
+            margin-right: 10px;
+        }
+
+        .todo-item button {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .todoText {
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="todomain">
+            <h1>To-Do Application</h1>
+            <input type="text" id="todo-input" placeholder="Add a new task">
+            <button onclick="addTodo()">Add</button>
+            <button onclick="deleteAll()">Delete All</button>
+            <ul id="todo-list"></ul>
+        </div>
+    </center>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
